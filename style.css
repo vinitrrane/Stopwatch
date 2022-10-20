@@ -1,0 +1,223 @@
+html,
+body {
+    margin: 0rem;
+    padding: 0rem;
+    font-family: 'Inter' !important;
+    background-image: radial-gradient(circle, #ffc371, #ffac66, #ff9362, #ff7a65, #ff5f6d);
+
+}
+
+/* Main Div */
+
+.main {
+    padding: 1rem;
+    margin: 0rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* border: 1px solid black; */
+}
+
+/* Heading */
+
+.head {
+    font-size: 2rem;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+/* Heading Icon */
+
+.head span {
+    color: #02aab0;
+    font-size: 2rem;
+}
+
+/* Stopwatch Div */
+
+.container {
+    /* border: 1px solid white; */
+    width: 50%;
+    margin: 0;
+    padding: 1rem 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+/* Time Area */
+
+.timeArea {
+    width: 100%;
+    margin: 1rem;
+    padding: 2rem;
+    text-align: left;
+    font-size: 5rem;
+    color: #FF5F6D;
+    text-align: center;
+    /* position: relative; */
+    /* left: 6.1rem; */
+    /* border: 1px solid black; */
+}
+
+/* Blinking Animation of seapreator */
+
+.bliSt {
+    animation: animate 0.5s ease-in-out infinite;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/* Button Area */
+
+.btnArea {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: 1rem;
+}
+
+/* All Buttons */
+
+.btn {
+    width: 30%;
+    outline: 1px solid #FFC371;
+    height: 70px;
+    box-shadow: none;
+    background-color: transparent;
+    border: none;
+    padding: 0rem;
+    font-size: 2rem;
+    /* outline: none; */
+}
+
+/* Start Button */
+
+.btnSta {
+    color: #4ccf4c;
+}
+
+.btnSta:hover {
+    background-color: #4ccf4c;
+    color: white;
+    outline-color: #4ccf4c;
+}
+
+/* Stop Button */
+
+.btnSto {
+    color: #ff4848;
+}
+
+.btnSto:hover {
+    background-color: #ff4848;
+    color: white;
+    outline-color: #ff4848;
+}
+
+/* Reset Button */
+
+.btnRes {
+    color: #02aab0;
+}
+
+.btnRes:hover {
+    background-color: #02aab0;
+    color: white;
+    outline-color: #02aab0;
+}
+
+/* MediaQuery for Tablet */
+
+@media screen and (max-width:768px) {
+
+    .head {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .head span {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        width: 60%;
+    }
+
+    .timeArea {
+        margin: 0.5rem;
+        padding: 0.5rem;
+        font-size: 2.4rem;
+    }
+
+    .btnArea {
+        margin: 0.5rem;
+    }
+
+    .btn {
+        width: 30%;
+        outline: 1px solid #FFC371;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .head {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .head span {
+        font-size: 1rem;
+    }
+
+    .main {
+        margin: 0rem;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0.3rem;
+    }
+
+    .timeArea {
+        margin: 0.3rem;
+        padding: 0.3rem;
+        font-size: 2.5rem;
+    }
+
+    .btnArea {
+        margin: 0.5rem;
+        width: 80%;
+    }
+
+    .btn {
+        width: 30%;
+        outline: 1px solid #FFC371;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+}
